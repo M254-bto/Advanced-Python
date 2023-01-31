@@ -22,8 +22,8 @@ def timer(function):
         start = time.time()
         value = function(*args, **kwargs)
         end = time.time()
-        fname = function.__name__
-        print(f"{fname} function took {end - start} seconds to execute")
+        
+        print(f"{function.__name__} function took {end - start} seconds to execute")
         return value
     return wrapper
 
