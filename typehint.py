@@ -3,4 +3,8 @@ def myfunction(param: list[int]) -> str:  #Here, type of parameter and return va
         print(f'{i} is in {param}')
 
 
-myfunction([1, 2, 3, 4, 5])
+
+
+
+name: str = 32
+print(name)

@@ -3,6 +3,9 @@ class Vector:
         self.x = x
         self.y = y
 
+    def __str__(self):
+        return f"Vector({self.x}, {self.y})"
+
     def __add__(self, other):
         return self.x + other.x, self.y + other.y
     def __call__(self):
@@ -10,4 +13,4 @@ class Vector:
 
 v1 = Vector(20, 30)
 v2 = Vector(10, 20)
-v1()
+print(v1 + v2)
